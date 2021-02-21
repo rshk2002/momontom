@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>TodoList</title>
+    <meta charset="UTF-8" />
+  </head>
+  <body>
+    <div class="weather">weather</div>
+    <div class="clock">
+      <div class="clock-date"></div>
+      <div class="clock-time"></div>
+    </div>
+    <div class="greet-and-todo">
+      <div class="greetings">
+        <h2>What's your name?</h2>
+        <form class="nameForm">
+          <input type="text" placeholder="Write your name" />
+        </form>
+      </div>
+
+      <h2>TODAY 📝</h2>
+      <form class="todoForm" id="todoForm">
+        <input type="text" placeholder="Add task" />
+        <button type="submit" form="todoForm">➕</button>
+      </form>
+      <!-- <h2>Pending</h2> -->
+      <ul class="pendingList"></ul>
+      <!-- <h3>Finished</h3> -->
+      <ul class="finishedList"></ul>
+    </div>
+    <script src="src/name.js"></script>
+    <script src="src/clock.js"></script>
+    <script src="src/todo.js"></script>
+    <script src="src/bg.js"></script>
+    <script src="src/weather.js"></script>
+  </body>
+</html>
