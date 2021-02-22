@@ -4,16 +4,22 @@ const nameInput = nameForm.querySelector("input");
 
 let userName;
 
-function submitHandler(e) {
-  e.preventDefault();
-  userName = nameInput.value;
-  setUserName();
+
+function saveUserName(){
+  console.log('save')
+  localStorage.setItem("userName", userName);
 }
 
-function setUserName() {
+function showUserName() {
   greetings.innerHTML = `<h2>Hello, ${userName}<h2>`;
+}
 
-  localStorage.setItem("userName", userName);
+function submitHandler(e) {
+  console.log('submit');
+  e.preventDefault();
+  userName = nameInput.value;
+  showUserName();
+  saveUserName();
   nameInput.value = "";
 }
 
@@ -21,7 +27,7 @@ function init() {
   userName = localStorage.getItem("userName");
 
   if (userName) {
-    setUserName();
+    showUserName();
   } else {
     nameForm.addEventListener("submit", submitHandler);
   }
