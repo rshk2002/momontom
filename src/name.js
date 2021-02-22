@@ -7,6 +7,7 @@ let userName;
 function submitHandler(e) {
   e.preventDefault();
   userName = nameInput.value;
+  setUserName();
 }
 
 function setUserName() {
