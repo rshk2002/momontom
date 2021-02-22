@@ -26,7 +26,7 @@ function submitHandler(e) {
 function init() {
   userName = localStorage.getItem("userName");
 
-  if (userName) {
+  if (userName && userName!=='') {
     showUserName();
   } else {
     nameForm.addEventListener("submit", submitHandler);
