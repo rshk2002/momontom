@@ -1,5 +1,5 @@
 // <⚠️ DONT DELETE THIS ⚠️>
-import "./styles.css";
+// import "./styles.css";
 // <⚠️ /DONT DELETE THIS ⚠️>
 const todoForm = document.querySelector(".todoForm"),
   todoInput = todoForm.querySelector("input"),
@@ -134,6 +134,8 @@ function saveTodos() {
 }
 
 function handleSubmit(event) {
+  console.log(event)
+  console.log('submit')
   event.preventDefault();
   const todoText = todoInput.value;
   const newId = String(Date.now());
@@ -161,6 +163,7 @@ function loadTodos() {
 }
 
 function init() {
+  console.log('init')
   loadTodos();
   restoreTodos();
   todoForm.addEventListener("submit", handleSubmit);
