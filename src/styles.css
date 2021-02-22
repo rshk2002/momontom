@@ -15,7 +15,8 @@ span {
 }
 
 .finishedList {
-  color: gray;
+  color: rgb(189, 189, 189);
+  text-decoration: line-through;
 }
 
 .clock-time {
@@ -45,8 +46,7 @@ span {
 
 .greet-and-todo {
   width: 500px;
-  /* background-color: rgba(216, 221, 226, 0.596);
-  align-self: center; */
+  background-color: rgba(74, 78, 82, 0.596);
   margin: 0 auto;
   text-align: center;
   align-content: center;
@@ -55,4 +55,24 @@ span {
 .weather {
   font-size: x-small;
   text-align: right;
+}
+
+.clock {
+  margin-top: 50px;
+}
+
+.clock-time {
+  margin-top: -10px;
+}
+
+.finishedList,
+.pendingList {
+  text-align: right;
+  font-weight: bold;
+}
+
+ul {
+  display: table;
+  margin-left: auto;
+  margin-right: auto;
 }
