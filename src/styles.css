@@ -51,3 +51,8 @@ span {
   text-align: center;
   align-content: center;
 }
+
+.weather {
+  font-size: x-small;
+  text-align: right;
+}
