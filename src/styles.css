@@ -46,10 +46,19 @@ span {
 
 .greet-and-todo {
   width: 500px;
-  background-color: rgba(74, 78, 82, 0.596);
   margin: 0 auto;
   text-align: center;
   align-content: center;
+}
+
+.todoList {
+  background-color: rgba(76, 80, 85, 0.233);
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.todoList input {
+  font-size: 18px;
 }
 
 .weather {
